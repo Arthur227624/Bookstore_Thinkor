@@ -1,0 +1,11 @@
+<h1><%= @loan.book_name %></h1>
+
+<p>Nome do livro: <%= @loan.book_name %></p>
+<p>Data de empréstimo: <%= @loan.loan_date %></p>
+<p>Data de entrega: <%= @loan.delivery_date %></p>
+
+<br>
+<%= button_to link_to 'Voltar a lista de empréstimos', loans_path %>
+<br>
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>
+

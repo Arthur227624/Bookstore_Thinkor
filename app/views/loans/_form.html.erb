@@ -1,0 +1,15 @@
+<%= form_with(model: @loan) do |form| %>
+
+  <%= form.label :Nome_do_livro %>
+  <%= form.text_field :book_name %>
+
+  <%= form.label :Data_do_empréstimo %>
+  <%= form.date_field :loan_date %>
+
+  <%= form.label :Data_de_devolução %>
+  <%= form.date_field :delivery_date %>
+
+  <%= form.submit %>
+<% end %>
+
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>

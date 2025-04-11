@@ -1,0 +1,11 @@
+<h1><%= @book.name %></h1>
+
+<p>Nome do livro: <%= @book.name %></p>
+<p>Autor: <%= @book.author %></p>
+<p>Páginas: <%= @book.pages %></p>
+
+<br>
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>
+<br>
+<%= button_to link_to 'Voltar a lista de livros', books_path %>
+

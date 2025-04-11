@@ -1,0 +1,19 @@
+<h1>Lista de empréstimos</h1>
+
+<%= button_to link_to 'Fazer empréstimo', new_loan_path %>
+<br>
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>
+
+<ul>
+    <% @loan.each do |loan| %>
+    <li>
+        <hr>
+        <h4><%= link_to loan.book_name, loan_path(loan) %></h4>
+        <br>
+        <%= button_to link_to 'Atualizar empréstimo ', edit_loan_path(loan) %>
+        <br>
+        <%= button_to 'Cancelar empréstimo', loan_path(loan), method: :delete%>
+    </li>
+    <% end %>
+</ul>
+

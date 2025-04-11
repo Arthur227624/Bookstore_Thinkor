@@ -1,0 +1,2 @@
+module BookstoreThinkorHelper
+end

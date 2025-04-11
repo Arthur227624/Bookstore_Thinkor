@@ -1,0 +1,14 @@
+<%= form_with(model: @user) do |form| %>
+
+  <%= form.label :Nome %>
+  <%= form.text_field :name %>
+
+  <%= form.label :Sobrenome %>
+  <%= form.text_field :surname %>
+
+  <%= form.submit %>
+<% end %>
+<br>
+
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>
+

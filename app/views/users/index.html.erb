@@ -1,0 +1,19 @@
+<h1>Lista de usuários</h1>
+
+<%= button_to link_to 'Criar usuários', new_user_path %>
+<br>
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>
+
+<ul>
+    <% @user.each do |user| %>
+    <li>
+        <hr>
+        <h4><%= link_to user.name, user_path(user) %></h4>
+        <br>
+        <%= button_to link_to 'Editar usuário', edit_user_path(user) %>
+        <br>
+        <%= button_to 'Apagar usuário',user_path(user), method: :delete%>
+    </li>
+    <% end %>
+</ul>
+

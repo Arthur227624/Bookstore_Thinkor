@@ -1,0 +1,15 @@
+<%= form_with(model: @book) do |form| %>
+
+  <%= form.label :Nome %>
+  <%= form.text_field :book %>
+
+  <%= form.label :Autor %>
+  <%= form.text_field :author %>
+
+  <%= form.label :Páginas %>
+  <%= form.number_field :pages %>
+
+  <%= form.submit %>
+<% end %>
+
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>

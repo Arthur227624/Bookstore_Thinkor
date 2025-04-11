@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loan_date: 2025-04-10
+  delivery_loan: 2025-04-10
+  book_name: MyString
+
+two:
+  loan_date: 2025-04-10
+  delivery_loan: 2025-04-10
+  book_name: MyString

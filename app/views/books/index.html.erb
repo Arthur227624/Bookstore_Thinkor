@@ -1,0 +1,18 @@
+<h1>Lista de livros</h1>
+
+<%= button_to link_to 'Criar livro', new_book_path %>
+
+<ul>
+    <% @book.each do |book| %>
+    <li>
+        <hr>
+        <h4><%= link_to book.name, book_path(book) %></h4>
+        <br>
+        <%= button_to link_to 'Editar livro', edit_book_path(book) %>
+        <br>
+        <%= button_to 'Excluir livro',book_path(book), method: :delete %>
+    </li>
+    <% end %>
+</ul>
+
+<%= button_to link_to 'Voltar a página inicial', home_thinkors_path %>
